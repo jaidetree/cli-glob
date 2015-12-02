@@ -6,7 +6,7 @@ Using npm:
 `sudo npm install cli-glob`
 
 ## Usage
-`glob src/*.js`
+`glob 'src/*.js'`
 
 ## Output
 ```
