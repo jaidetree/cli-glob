@@ -1,6 +1,6 @@
 {
   "name": "cli-glob",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A glob cli utility to interface with unix commands, editors, and quickly find files.",
   "main": "index.js",
   "bin": {
