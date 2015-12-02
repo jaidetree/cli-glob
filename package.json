@@ -1,0 +1,41 @@
+{
+  "name": "cli-glob",
+  "version": "0.0.1",
+  "description": "A glob cli utility to interface with unix commands, editors, and quickly find files.",
+  "main": "index.js",
+  "bin": {
+    "glob": "./bin/cli-glob"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayzawrotny/cli-glob.git"
+  },
+  "keywords": [
+    "glob"
+  ],
+  "author": "Jay Zawrotny <jayzawrotny@gmail.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jayzawrotny/cli-glob/issues"
+  },
+  "homepage": "https://github.com/jayzawrotny/cli-glob#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-eslint": "^5.0.0-beta4",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-1": "^6.1.18",
+    "del": "^2.1.0",
+    "expect": "^1.13.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0"
+  },
+  "dependencies": {
+    "glob": "^6.0.1",
+    "minimist": "^1.2.0"
+  }
+}
