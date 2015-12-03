@@ -21,9 +21,21 @@ if (args.help) {
  */
 globcmd(args._, args.dir || args.d)
   .then((files) => {
-    files.forEach((file) => {
-      process.stdout.write(file.relative + '\n');
-    });
+    if (process.stdin.isTTY) {
+      /**
+       * If run directly as a cmd report the files with new lines
+       */
+      files.forEach((file) => {
+        process.stdout.write(file.relative + '\n');
+      });
+    }
+    else {
+      /**
+       * Otherwise report the files as space separated file list to make it
+       * easier to pipe into other applications
+       */
+      process.stdout.write(files.map((file) => file.relative).join(' '));
+    }
   })
   .catch((err) => {
     process.stderr.write(err.stack + '\n');

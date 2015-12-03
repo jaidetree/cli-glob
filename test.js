@@ -34,11 +34,7 @@ describe('glob-cli', () => {
 
         if (err) throw new Error(err);
 
-        console.log(stdout);
-
-        files = String(stdout).split('\n');
-
-        files.pop();
+        files = String(stdout).split(' ');
 
         expect(files).toBeA(Array);
         expect(files.length).toBe(2, 'Invalid length: ' + inspect(files));
