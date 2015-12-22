@@ -1,5 +1,8 @@
 import glob from 'glob';
 import path from 'path';
+import {polyfill} from 'es6-promise';
+
+polyfill();
 
 /**
  * Globcmd
